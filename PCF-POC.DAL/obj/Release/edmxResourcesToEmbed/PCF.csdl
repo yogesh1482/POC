@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PcfDatabaseEntities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CarModel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Equipment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="PackageEquipmentMappings" Relationship="Self.FK_PackageEquipmentMapping_Equipments" FromRole="Equipments" ToRole="PackageEquipmentMappings" />
+  </EntityType>
+  <EntityType Name="PackageEquipmentMapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="EquipmentId" Type="Int32" Nullable="false" />
+    <Property Name="PackageId" Type="Int32" />
+    <NavigationProperty Name="Equipment" Relationship="Self.FK_PackageEquipmentMapping_Equipments" FromRole="PackageEquipmentMappings" ToRole="Equipments" />
+    <NavigationProperty Name="Package" Relationship="Self.FK_PackageEquipmentMapping_Packages" FromRole="PackageEquipmentMappings" ToRole="Packages" />
+  </EntityType>
+  <EntityType Name="Package">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PackageEquipmentMappings" Relationship="Self.FK_PackageEquipmentMapping_Packages" FromRole="Packages" ToRole="PackageEquipmentMappings" />
+  </EntityType>
+  <Association Name="FK_PackageEquipmentMapping_Equipments">
+    <End Role="Equipments" Type="Self.Equipment" Multiplicity="1" />
+    <End Role="PackageEquipmentMappings" Type="Self.PackageEquipmentMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipments">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PackageEquipmentMappings">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PackageEquipmentMapping_Packages">
+    <End Role="Packages" Type="Self.Package" Multiplicity="0..1" />
+    <End Role="PackageEquipmentMappings" Type="Self.PackageEquipmentMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Packages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PackageEquipmentMappings">
+        <PropertyRef Name="PackageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PCFdbserverEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CarModels" EntityType="Self.CarModel" />
+    <EntitySet Name="Equipments" EntityType="Self.Equipment" />
+    <EntitySet Name="PackageEquipmentMappings" EntityType="Self.PackageEquipmentMapping" />
+    <EntitySet Name="Packages" EntityType="Self.Package" />
+    <AssociationSet Name="FK_PackageEquipmentMapping_Equipments" Association="Self.FK_PackageEquipmentMapping_Equipments">
+      <End Role="Equipments" EntitySet="Equipments" />
+      <End Role="PackageEquipmentMappings" EntitySet="PackageEquipmentMappings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PackageEquipmentMapping_Packages" Association="Self.FK_PackageEquipmentMapping_Packages">
+      <End Role="Packages" EntitySet="Packages" />
+      <End Role="PackageEquipmentMappings" EntitySet="PackageEquipmentMappings" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,15 @@
+C:\Users\PCF\PCF-POC\BuildArtifacts\PCF-POC.BL.dll
+C:\Users\PCF\PCF-POC\BuildArtifacts\PCF-POC.BL.pdb
+C:\Users\PCF\PCF-POC\PCF-POC.BL\obj\Release\PCF-POC.BL.csprojResolveAssemblyReference.cache
+C:\Users\PCF\PCF-POC\PCF-POC.BL\obj\Release\PCF-POC.BL.dll
+C:\Users\PCF\PCF-POC\PCF-POC.BL\obj\Release\PCF-POC.BL.pdb
+C:\Project\PCF-POC\BuildArtifacts\PCF-POC.BL.dll
+C:\Project\PCF-POC\BuildArtifacts\PCF-POC.BL.pdb
+C:\Project\PCF-POC\PCF-POC.BL\obj\Release\PCF-POC.BL.csprojResolveAssemblyReference.cache
+C:\Project\PCF-POC\PCF-POC.BL\obj\Release\PCF-POC.BL.dll
+C:\Project\PCF-POC\PCF-POC.BL\obj\Release\PCF-POC.BL.pdb
+C:\PCF-POC\BuildArtifacts\PCF-POC.BL.dll
+C:\PCF-POC\BuildArtifacts\PCF-POC.BL.pdb
+C:\PCF-POC\PCF-POC.BL\obj\Release\PCF-POC.BL.csprojResolveAssemblyReference.cache
+C:\PCF-POC\PCF-POC.BL\obj\Release\PCF-POC.BL.dll
+C:\PCF-POC\PCF-POC.BL\obj\Release\PCF-POC.BL.pdb

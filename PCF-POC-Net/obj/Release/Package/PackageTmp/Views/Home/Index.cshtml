@@ -1,0 +1,132 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var logo = "";
+    switch ((int)ViewBag.DeployType)
+    {
+        case 0:
+            logo = "<img src='/images/webapp.png' alt='Web App' class='img-logo pull-right' />";
+            break;
+        case 1:
+            logo = "<img src='/images/tech-docker.svg' alt='Docker View' class='img-logo pull-right' />";
+            break;
+        default:
+            logo = "<img src='~/images/banner2.svg' alt='VisualStudio' class='img-responsive pull-right' />";
+            break;
+
+    }
+    ViewData["Header1"] = "<div class='col-md-12'  style='padding: 0px 0px 0px 0px;'><div class='col-md-6' style='padding: 0px 0px 0px 0px;'><h2>MUST <i class='fa fa-trophy' aria-hidden='true'></i> HAVE</h2></div><div class='col-md-6'>"
+                          + logo + "</div></div>";
+
+}
+
+<br />
+<div class="row">
+    <div class="span6 col-md-6" style="padding-left:40px;">
+        <h3>Altfahrzeug</h3>
+        <form id="Elv" class="form-horizontal">
+            <div id="pad_left" class="form-group">
+                <label for="someNumber">Fahrgestellnummer:</label>
+                <input type="number" class="form-control" id="someNumber" placeholder="Number">
+            </div>
+
+            <div class="form-group">
+                <h5 id="pad_left">ZUSAMMENFASSUNG</h5>
+                <label for="Name" class="control-label col-xs-3">Baureihe:</label>
+                <div class="col-xs-9">
+                    <p class="form-control-static">E-Klasse</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Year" class="control-label col-xs-3">Baujahr:</label>
+                <div class="col-xs-9">
+                    <p class="form-control-static">2013</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Company" class="control-label col-xs-3">Aufbau:</label>
+                <div class="col-xs-9">
+                    <p class="form-control-static">Limousine</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Model" class="control-label col-xs-3">Model:</label>
+                <div class="col-xs-9">
+                    <p class="form-control-static">E220 CDI</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="detail" class="control-label col-xs-3">Ausstattung:</label>
+                <div class="col-xs-9">
+                    <p class="form-control-static">Awantgarde</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="frontColor" class="control-label col-xs-3">Polster:</label>
+                <div class="col-xs-9">
+                    <p class="form-control-static"><span class="color-box black"></span> 221 Lederschwarz</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="rearColor" class="control-label col-xs-3">Lackierung:</label>
+                <div class="col-xs-9">
+                    <p class="form-control-static"><span class="color-box grey"></span> 775 Iridum Silber</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="span6 col-md-6">
+        <h3 id="pad_left">Zielfahrzeug</h3>
+        <div class="col-md-12">
+            <div id="grey_back" class="col-xs-6">
+
+                <p style="font-style:italic">Noch kein konfiguriertes Fahrzeug vorhanden?</p>
+                <br />
+                <div class="form-group">
+                    <label for="baureihe">Baureihe:</label>
+                    <input type="text" class="form-control" id="baureihe" value="E-Klasse" disabled>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="baureihe">Aufbau:</label>
+                    <div>
+                        <i class="fa fa-car fa-3x" aria-hidden="true"></i>
+                        <i class="fa fa-truck fa-3x margin_left fa-inverse" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="baureihe">Motor:</label>
+                    <div>
+                        <select class="selectpicker">
+                            <option>E220 Diesel</option>
+                            <option>E220 Petrol</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grey_back" class="margin_left col-xs-5">
+                <p style="font-style:italic">Existient bereits ein konfigurierties Fahrzeug?</p>
+                <br />
+                <div class="form-group">
+                    <label for="baureihe">Online Code oder Auftrasnummer:</label>
+                    <input type="number" class="form-control" placeholder="Customer Online Code">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 text-center">
+            @*<button type="button" class="btn btn-default navbar-btn submit-button"><i class="fa fa-star" aria-hidden="true"></i> Ausstattungsempfehlungen</button>*@
+            @Html.ActionLink("Ausstattungsempfehlungen", "Recommendation", "Home", null, new { @class = "btn btn-default navbar-btn submit-button" })
+        </div>
+        <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-default navbar-btn submit-button"><i class="fa fa-newspaper-o" aria-hidden="true"></i> PreSalesNews</button>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-12 text-center ">
+        <button type="button" class="btn btn-default navbar-btn submit-button"><i class="fa fa-files-o" aria-hidden="true"></i> Ausstattungsvergleich</button>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+C:\Users\PCF\PCF-POC\BuildArtifacts\PCF-POC.Models.dll
+C:\Users\PCF\PCF-POC\BuildArtifacts\PCF-POC.Models.pdb
+C:\Users\PCF\PCF-POC\PCF-POC.Models\obj\Release\PCF-POC.Models.dll
+C:\Users\PCF\PCF-POC\PCF-POC.Models\obj\Release\PCF-POC.Models.pdb
+C:\Project\PCF-POC\BuildArtifacts\PCF-POC.Models.dll
+C:\Project\PCF-POC\BuildArtifacts\PCF-POC.Models.pdb
+C:\Project\PCF-POC\PCF-POC.Models\obj\Release\PCF-POC.Models.dll
+C:\Project\PCF-POC\PCF-POC.Models\obj\Release\PCF-POC.Models.pdb
+C:\PCF-POC\BuildArtifacts\PCF-POC.Models.dll
+C:\PCF-POC\BuildArtifacts\PCF-POC.Models.pdb
+C:\PCF-POC\PCF-POC.Models\obj\Release\PCF-POC.Models.dll
+C:\PCF-POC\PCF-POC.Models\obj\Release\PCF-POC.Models.pdb

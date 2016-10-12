@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <EnvNugetSource Condition="'$(SubEnv)' == ''">http://nuget.starbucks.net</EnvNugetSource>
+    <!-- pull from the env specific nuget server if appropriate -->
+    <EnvNugetSource Condition=" '$(SubEnv)' != '' And '$(SubEnv)' != 'Load' And '$(SubEnv)' != 'TestAshburn' And '$(SubEnv)' != 'Test' ">http://nuget.starbucks.net;http://$([System.String]::Copy('$(SubEnv)').Replace('.',''))nuget.sbweb.prod</EnvNugetSource>
+  </PropertyGroup>
+
+  <ItemGroup Condition="Exists('$(MSBuildProjectDirectory)\packages')">
+    <PackageDirectories Include="$([System.IO.Directory]::GetDirectories('$(MSBuildProjectDirectory)\packages', '*', System.IO.SearchOption.AllDirectories))"/>
+  </ItemGroup>
+  
+  <Target Name="EchoParams">
+    <Message Text="Configuration is $(Configuration)" />
+    <Message Text="BuildProperties is $(BuildProperties)" />
+    <Message Text="SubEnv is $(SubEnv)" />
+    <Message Text="EnvNugetSource is $(EnvNugetSource)" />
+  </Target>
+  
+  <Target Name="UpdateNuGet">
+              <Exec Command="&quot;$(MSBuildThisFileDirectory)NuGet.exe&quot; Update -Self" />
+       </Target>
+
+  <!-- Note: NoCache is neccessary because different nuget servers share the same nuget cache. As a result test stack builds can populate the cache which test main builds subsequently pull from  -->
+  <Target Name="RestorePackages" DependsOnTargets="UpdateNuGet;EchoParams">
+              <Exec Command="&quot;$(MSBuildThisFileDirectory)NuGet.exe&quot; Restore &quot;%(Solution.Identity)&quot; -Source $(EnvNugetSource) -NoCache" />
+       </Target>
+       
+       <!-- the Release builds only pull from main nuget server, verify all packages are on the main nuget server -->
+       <Target Name="RestorePackagesMainOnly" DependsOnTargets="UpdateNuGet">
+    <RemoveDir Directories="@(PackageDirectories)" ContinueOnError="true"/>
+    <Exec Command="&quot;$(MSBuildThisFileDirectory)NuGet.exe&quot; Restore &quot;%(Solution.Identity)&quot; -Source http://nuget.abc.net;http://nuget.org -NoCache" />
+  </Target>
+
+  <Target Name="Clean">
+    <MSBuild Targets="Clean" Projects="@(Solution)" />
+  </Target>
+       
+       <Target Name="Build" DependsOnTargets="RestorePackages">
+              <MSBuild Targets="Build" Projects="@(Solution)" Properties="Configuration=$(Configuration)"/>
+       </Target>
+       
+       <Target Name="BuildMainNugetOnly" DependsOnTargets="Clean;RestorePackagesMainOnly">
+              <MSBuild Targets="Build" Projects="@(Solution)" Properties="Configuration=$(Configuration)"/>
+       </Target>
+
+  <Target Name="Check" DependsOnTargets="BuildMainNugetOnly">
+    <Message Text="Check if sln builds from main nuget packages only." />
+  </Target>
+
+  <Target Name="Rebuild" DependsOnTargets="RestorePackages">
+              <MSBuild Targets="Rebuild" Projects="@(Solution)" Properties="Configuration=$(Configuration)" />
+       </Target>
+
+  <Target Name="BuildCleanRelease" DependsOnTargets="Clean">
+    <MSBuild Targets="Build" Projects="@(Solution)" Properties="Configuration=$(Configuration)" />
+  </Target>
+  
+</Project>

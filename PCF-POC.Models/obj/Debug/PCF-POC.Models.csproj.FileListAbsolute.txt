@@ -1,0 +1,5 @@
+C:\Users\PCF\PCF-POC\PCF-POC.Models\bin\Debug\PCF-POC.Models.dll
+C:\Users\PCF\PCF-POC\PCF-POC.Models\bin\Debug\PCF-POC.Models.pdb
+C:\Users\PCF\PCF-POC\PCF-POC.Models\obj\Debug\PCF-POC.Models.dll
+C:\Users\PCF\PCF-POC\PCF-POC.Models\obj\Debug\PCF-POC.Models.pdb
+C:\Users\PCF\PCF-POC\PCF-POC.Models\obj\Debug\PCF-POC.Models.csprojResolveAssemblyReference.cache

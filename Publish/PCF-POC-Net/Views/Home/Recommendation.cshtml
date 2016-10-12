@@ -1,0 +1,253 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Header1"] = "<div class='col-md-12'  style='padding: 0px 0px 0px 0px;vertical-align:middle;'><div class='col-md-6' style='top:20px;'><span class='glyphicon glyphicon-chevron-left' style='font-size:24px;'>Zurcuck</span></div><div class='col-md-6'  style='top:20px;'><i class='fa fa-comment-o fa-2x' style='float:right;' aria-hidden='true'></i></div></div>";
+}
+@model PCF_POC.Models.HomeViewModels.RecommendationViewModel
+<style>
+    #table1 tr.active td {
+        background-color:#e6e6e6;
+    }
+
+    .no-pad-marg {
+        padding:0px 0px 0px 0px;
+        margin:0px 0px 0px 0px;
+    }
+
+</style>
+<div class="row container-fluid col-md-12 no-pad-marg" style="align-content:center;">
+    
+    <div class="col-md-6 no-pad-marg" style="height:auto;">
+        <div class="col-md-12" style="height:60px;font-size:medium;vertical-align:middle;">
+            
+        </div>
+        <hr />
+        <div class="container-fluid col-md-12 no-pad-marg" style="height:auto;">
+            <p>TEIL EINES PAKETS</p>
+            <p>
+                <table class="table table-hover" id="table1">
+                    <tr>
+                        <th></th>
+                        <th>Code</th>
+                        <th>Beschreibung</th>
+                        <td></td>
+                    </tr>
+                    @foreach (var equipment in Model.equipments)
+                    {
+                        <tr id="@equipment.Id" onclick="changeColor(this);">
+                            <td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
+                            <td>@equipment.Id</td>
+                            <td>@equipment.Description</td>
+                            <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                        </tr>
+                    }
+                    @*<tr id="equipment1" onclick="changeColor(this);">
+                        <td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
+                        <td>22P</td>
+                        <td>Spurhalte-Assistent</td>
+                        <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                    </tr>
+                    <tr id="equipment2" onclick="changeColor(this);">
+                        <td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
+                        <td>23P</td>
+                        <td>Lenk-Pilot DRIVE PILOT</td>
+                        <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                    </tr>
+                    <tr id="equipment3" onclick="changeColor(this);">
+                        <td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
+                        <td>23S</td>
+                        <td>Spurhalte-Assistent</td>
+                        <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                    </tr>*@
+
+                </table>
+
+            </p>
+        </div>
+        <hr />
+        <div class="col-md-12 no-pad-marg" style="height:300px;">@*padding-left:0px;padding-right:0px;*@
+
+            <p>TEIL EINES PAKETS</p>
+            <p>
+                <table class="table">
+                    <tr>
+                        <th></th>
+                        <th>Code</th>
+                        <th>Beschreibung</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
+                        <td>22P</td>
+                        <td>Spurhalte-Assistent</td>
+                        <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
+                        <td>23P</td>
+                        <td>Lenk-Pilot DRIVE PILOT</td>
+                        <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
+                        <td>23S</td>
+                        <td>Spurhalte-Assistent</td>
+                        <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                    </tr>
+
+                </table>
+
+            </p>
+
+        </div>
+        <hr />
+    </div>
+    <div class="col-md-1 table-bordered no-pad-marg" style="height:600px;width:1px;"></div>@*padding:0px 0px 0px 0px;*@
+    <div class="col-md-5 no-pad-marg" style="height:auto;" id="packagesDiv">
+        @*<div class="col-md-12" style="height:auto;">
+                <p class="col-md-10" style="font-size:18px;" id="package1"><b>22P: Spur-Paket</b><br /><label style="font-size:14px;">(bereits 1 von 2 Ausstattungen)</label></p>
+                <span class="glyphicon glyphicon-chevron-up col-md-2" id="package1-toggle"></span>
+
+                <table class="col-md-12" style="font-size:15px" id="package1-items">
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="Totwinkel-Assistent" value="Totwinkel-Assistent" checked="checked" /> Totwinkel-Assistent</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="Spurhalte-Assistent" value="Spurhalte-Assistent" /> Spurhalte-Assistent</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        <hr />*@
+
+        @*<div class="col-md-12 nopadding" style="height:300px;">
+
+            </div>
+            <br />
+            <div class="col-md-12 nopadding" style="height:300px;">
+
+            </div>
+            <hr />*@
+        @*</div>*@
+
+    </div>
+    @*</div>*@
+</div>
+<script src="~/js/jquery-1.10.2.min.js"></script>
+<script>
+    var equipmentId;
+    var objectsArray = [];
+
+    $(document).ready(function () {
+        // Switch buttons from "Log In | Register" to "Close Panel" on click
+        $("#package1-toggle").click(function () {
+            $("#package1-items").toggle();
+            $("#package1-toggle").switchClass("glyphicon glyphicon-chevron-up col-md-2", "glyphicon glyphicon-chevron-down col-md-2", 1000, "easeInOutQuad");
+        });
+
+    });
+
+    function changeColor(tr)
+    {
+        //alert($(tr).attr('id'));
+        $(tr).parent().find('tr').removeClass("active");
+        $(tr).addClass("active");
+        equipmentId = parseInt($(tr).attr('id'));
+        objectsArray = [];
+        //$.getJSON("http://localhost:1438/api/Equipment?id=" + equipmentId, function (data) {
+            
+        //    var packages = JSON.stringify(data);
+        //    data.forEach(function (item) {
+        //        getEquipmentsByPackageId(item.PackageId);
+        //    });
+        //});
+
+        $.ajax({
+            url: "http://pcfpocapi.azurewebsites.net/api/Equipment?id=" + equipmentId,
+            dataType: 'json',
+            async: false,
+            //data: myData,
+            success: function (data) {
+                $('#packagesDiv').empty();
+                var packages = JSON.stringify(data);
+                data.forEach(function (item) {
+                    setTimeout(getEquipmentsByPackageId(item.PackageId),2000);                    
+                });
+                
+            }
+        });
+
+    }
+    
+    function getEquipmentsByPackageId(Id)
+    {
+
+        $.ajax({
+            url: "http://pcfpocapi.azurewebsites.net/api/package/get/" + Id,
+            dataType: 'json',
+            async: false,
+            //data: myData,
+            success: function (data) {
+                //data.forEach(function (item) {
+                    //objectsArray.push(item);
+                //});
+                //addPackagesDiv(objectsArray);
+                addPackagesDiv(data[0]);
+            }
+        });
+
+    }
+
+    
+
+    function addPackagesDiv(data) {
+        //objArray.forEach(function (item) {
+            //item.forEach(function (innerItem) {
+                $('#packagesDiv')
+                    .append("<div class='col-md-12' style='height:auto;order:1px solid #000;'>" +
+                            "<p class='col-md-10' style='font-size:18px;' id='package1'><b>" + data.PackageId + ":" + data.PackageDescription + "</b><br /><label style='font-size:14px;'>(bereits 1 von 2 Ausstattungen)</label></p>" +
+                            "<span class='glyphicon glyphicon-chevron-up col-md-2' id='package1-toggle'></span>" +
+                            "<table class='col-md-12' style='font-size:15px' id='Package"+data.PackageId+"-items'>" +
+                        "</table></div>");
+            //});
+                addEquipmentsToTable($("#Package"+data.PackageId+"-items"), data);
+        //});
+
+
+    }
+
+    function addEquipmentsToTable(tableId,data)
+    {
+        data.Equipments.forEach(function (item) {
+            var d = false;
+
+            data.MappedEquipmentsId.forEach(function (j) {
+                if (j == item.Id)
+                    d = true;
+            });
+
+            if (d==true) {
+                d = "<label><input type='checkbox' checked='checked' id='equipment_"+item.Id+"' />" + item.Description + "</label>";
+                }
+            else{
+                d = "<label><input type='checkbox' id='equipment_"+item.Id+"' />" + item.Description + "</label>";
+            }
+            tableId.append("<tr>" +
+                        "<td>" +
+                            "<div class='checkbox'>" +
+                            d +
+                            "</div>" +
+                        "</td>" +
+                    "</tr>")
+        });
+        
+    }
+</script>
