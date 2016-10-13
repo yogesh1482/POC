@@ -21,3 +21,15 @@ C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\Newtonsoft.Json.xml
 C:\Project\PCF-POC\PCF-POC.DAL\obj\Debug\PCF-POC.DAL.dll
 C:\Project\PCF-POC\PCF-POC.DAL\obj\Debug\PCF-POC.DAL.pdb
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\bin\Debug\PCF-POC.DAL.dll.config
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\bin\Debug\PCF-POC.DAL.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\bin\Debug\PCF-POC.DAL.pdb
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\bin\Debug\EntityFramework.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\bin\Debug\EntityFramework.xml
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\obj\Debug\PCF-POC.DAL.csprojResolveAssemblyReference.cache
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\obj\Debug\PCF-POC.DAL.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.DAL\obj\Debug\PCF-POC.DAL.pdb

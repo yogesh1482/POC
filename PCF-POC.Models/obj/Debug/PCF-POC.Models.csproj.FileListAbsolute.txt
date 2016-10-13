@@ -7,3 +7,8 @@ C:\Project\PCF-POC\PCF-POC.Models\bin\Debug\PCF-POC.Models.dll
 C:\Project\PCF-POC\PCF-POC.Models\bin\Debug\PCF-POC.Models.pdb
 C:\Project\PCF-POC\PCF-POC.Models\obj\Debug\PCF-POC.Models.dll
 C:\Project\PCF-POC\PCF-POC.Models\obj\Debug\PCF-POC.Models.pdb
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Models\bin\Debug\PCF-POC.Models.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Models\bin\Debug\PCF-POC.Models.pdb
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Models\obj\Debug\PCF-POC.Models.csprojResolveAssemblyReference.cache
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Models\obj\Debug\PCF-POC.Models.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Models\obj\Debug\PCF-POC.Models.pdb

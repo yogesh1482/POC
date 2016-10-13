@@ -22,3 +22,15 @@ C:\Project\PCF-POC\PCF-POC.Repository\bin\Debug\EntityFramework.SqlServer.xml
 C:\Project\PCF-POC\PCF-POC.Repository\obj\Debug\PCF-POC.Repository.csprojResolveAssemblyReference.cache
 C:\Project\PCF-POC\PCF-POC.Repository\obj\Debug\PCF-POC.Repository.dll
 C:\Project\PCF-POC\PCF-POC.Repository\obj\Debug\PCF-POC.Repository.pdb
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\bin\Debug\PCF-POC.Repository.dll.config
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\bin\Debug\PCF-POC.Repository.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\bin\Debug\PCF-POC.Repository.pdb
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\bin\Debug\EntityFramework.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\bin\Debug\PCF-POC.DAL.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\bin\Debug\PCF-POC.DAL.pdb
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\bin\Debug\EntityFramework.xml
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\obj\Debug\PCF-POC.Repository.csprojResolveAssemblyReference.cache
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\obj\Debug\PCF-POC.Repository.dll
+C:\Users\ecolab\Source\Repos\POC\PCF-POC.Repository\obj\Debug\PCF-POC.Repository.pdb
