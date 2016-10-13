@@ -193,6 +193,7 @@ C:\Project\PCF-POC\PCF-POC-Net\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Project\PCF-POC\PCF-POC-Net\bin\Microsoft.Owin.Security.Google.xml
 C:\Project\PCF-POC\PCF-POC-Net\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Project\PCF-POC\PCF-POC-Net\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Project\PCF-POC\PCF-POC-Net\obj\Debug\PCF-POC-Net.csprojResolveAssemblyReference.cache
 C:\Project\PCF-POC\PCF-POC-Net\obj\Debug\PCF-POC-Net.dll
 C:\Project\PCF-POC\PCF-POC-Net\obj\Debug\PCF-POC-Net.pdb
+C:\Project\PCF-POC\PCF-POC-Net\bin\System.Runtime.dll
+C:\Project\PCF-POC\PCF-POC-Net\bin\System.ComponentModel.dll

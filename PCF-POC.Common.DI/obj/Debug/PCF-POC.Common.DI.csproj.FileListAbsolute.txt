@@ -92,3 +92,4 @@ C:\Project\PCF-POC\PCF-POC.Common.DI\bin\Debug\EntityFramework.xml
 C:\Project\PCF-POC\PCF-POC.Common.DI\obj\Debug\PCF-POC.Common.DI.csprojResolveAssemblyReference.cache
 C:\Project\PCF-POC\PCF-POC.Common.DI\obj\Debug\PCF-POC.Common.DI.dll
 C:\Project\PCF-POC\PCF-POC.Common.DI\obj\Debug\PCF-POC.Common.DI.pdb
+C:\Project\PCF-POC\PCF-POC.Common.DI\bin\Debug\System.Runtime.dll

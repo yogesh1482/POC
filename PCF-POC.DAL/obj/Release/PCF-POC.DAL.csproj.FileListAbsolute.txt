@@ -10,9 +10,9 @@ C:\Project\PCF-POC\BuildArtifacts\PCF-POC.DAL.pdb
 C:\Project\PCF-POC\PCF-POC.DAL\obj\Release\PCF-POC.DAL.csprojResolveAssemblyReference.cache
 C:\Project\PCF-POC\PCF-POC.DAL\obj\Release\PCF-POC.DAL.dll
 C:\Project\PCF-POC\PCF-POC.DAL\obj\Release\PCF-POC.DAL.pdb
-C:\PCF-POC\BuildArtifacts\PCF-POC.DAL.dll.config
-C:\PCF-POC\BuildArtifacts\PCF-POC.DAL.dll
-C:\PCF-POC\BuildArtifacts\PCF-POC.DAL.pdb
-C:\PCF-POC\PCF-POC.DAL\obj\Release\PCF-POC.DAL.csprojResolveAssemblyReference.cache
-C:\PCF-POC\PCF-POC.DAL\obj\Release\PCF-POC.DAL.dll
-C:\PCF-POC\PCF-POC.DAL\obj\Release\PCF-POC.DAL.pdb
+C:\POC\PCF-POC\BuildArtifacts\PCF-POC.DAL.dll.config
+C:\POC\PCF-POC\BuildArtifacts\PCF-POC.DAL.dll
+C:\POC\PCF-POC\BuildArtifacts\PCF-POC.DAL.pdb
+C:\POC\PCF-POC\PCF-POC.DAL\obj\Release\PCF-POC.DAL.csprojResolveAssemblyReference.cache
+C:\POC\PCF-POC\PCF-POC.DAL\obj\Release\PCF-POC.DAL.dll
+C:\POC\PCF-POC\PCF-POC.DAL\obj\Release\PCF-POC.DAL.pdb

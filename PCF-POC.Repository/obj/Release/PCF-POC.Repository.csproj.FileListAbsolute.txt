@@ -10,9 +10,9 @@ C:\Project\PCF-POC\BuildArtifacts\PCF-POC.Repository.pdb
 C:\Project\PCF-POC\PCF-POC.Repository\obj\Release\PCF-POC.Repository.csprojResolveAssemblyReference.cache
 C:\Project\PCF-POC\PCF-POC.Repository\obj\Release\PCF-POC.Repository.dll
 C:\Project\PCF-POC\PCF-POC.Repository\obj\Release\PCF-POC.Repository.pdb
-C:\PCF-POC\BuildArtifacts\PCF-POC.Repository.dll.config
-C:\PCF-POC\BuildArtifacts\PCF-POC.Repository.dll
-C:\PCF-POC\BuildArtifacts\PCF-POC.Repository.pdb
-C:\PCF-POC\PCF-POC.Repository\obj\Release\PCF-POC.Repository.csprojResolveAssemblyReference.cache
-C:\PCF-POC\PCF-POC.Repository\obj\Release\PCF-POC.Repository.dll
-C:\PCF-POC\PCF-POC.Repository\obj\Release\PCF-POC.Repository.pdb
+C:\POC\PCF-POC\BuildArtifacts\PCF-POC.Repository.dll.config
+C:\POC\PCF-POC\BuildArtifacts\PCF-POC.Repository.dll
+C:\POC\PCF-POC\BuildArtifacts\PCF-POC.Repository.pdb
+C:\POC\PCF-POC\PCF-POC.Repository\obj\Release\PCF-POC.Repository.csprojResolveAssemblyReference.cache
+C:\POC\PCF-POC\PCF-POC.Repository\obj\Release\PCF-POC.Repository.dll
+C:\POC\PCF-POC\PCF-POC.Repository\obj\Release\PCF-POC.Repository.pdb

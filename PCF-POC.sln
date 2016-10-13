@@ -29,7 +29,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCF-POC.API", "PCF-POC.API\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9C99302C-B0E4-4013-AFB2-1F7A4A003628}"
 	ProjectSection(SolutionItems) = preProject
+		PCF-POC-AutomationScript\AutomationSelenium.java = PCF-POC-AutomationScript\AutomationSelenium.java
 		global.json = global.json
+		PCF-POC-MsbuildScript\PCFPOC.msbuild = PCF-POC-MsbuildScript\PCFPOC.msbuild
 		PreBuild.ps1 = PreBuild.ps1
 	EndProjectSection
 EndProject

@@ -10,3 +10,14 @@ C:\Users\PCF\PCF-POC\PCF-POC.DAL\bin\Debug\Newtonsoft.Json.xml
 C:\Users\PCF\PCF-POC\PCF-POC.DAL\obj\Debug\PCF-POC.DAL.csprojResolveAssemblyReference.cache
 C:\Users\PCF\PCF-POC\PCF-POC.DAL\obj\Debug\PCF-POC.DAL.dll
 C:\Users\PCF\PCF-POC\PCF-POC.DAL\obj\Debug\PCF-POC.DAL.pdb
+C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\PCF-POC.DAL.dll.config
+C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\PCF-POC.DAL.dll
+C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\PCF-POC.DAL.pdb
+C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\EntityFramework.dll
+C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\EntityFramework.xml
+C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Project\PCF-POC\PCF-POC.DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Project\PCF-POC\PCF-POC.DAL\obj\Debug\PCF-POC.DAL.dll
+C:\Project\PCF-POC\PCF-POC.DAL\obj\Debug\PCF-POC.DAL.pdb

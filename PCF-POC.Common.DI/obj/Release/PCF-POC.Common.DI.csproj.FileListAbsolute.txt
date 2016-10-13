@@ -10,6 +10,9 @@ C:\Project\PCF-POC\BuildArtifacts\PCF-POC.Common.DI.pdb
 C:\Project\PCF-POC\PCF-POC.Common.DI\obj\Release\PCF-POC.Common.DI.csprojResolveAssemblyReference.cache
 C:\Project\PCF-POC\PCF-POC.Common.DI\obj\Release\PCF-POC.Common.DI.dll
 C:\Project\PCF-POC\PCF-POC.Common.DI\obj\Release\PCF-POC.Common.DI.pdb
-C:\PCF-POC\PCF-POC.Common.DI\obj\Release\PCF-POC.Common.DI.csprojResolveAssemblyReference.cache
-C:\PCF-POC\PCF-POC.Common.DI\obj\Release\PCF-POC.Common.DI.dll
-C:\PCF-POC\PCF-POC.Common.DI\obj\Release\PCF-POC.Common.DI.pdb
+C:\POC\PCF-POC\BuildArtifacts\PCF-POC.Common.DI.dll.config
+C:\POC\PCF-POC\BuildArtifacts\PCF-POC.Common.DI.dll
+C:\POC\PCF-POC\BuildArtifacts\PCF-POC.Common.DI.pdb
+C:\POC\PCF-POC\PCF-POC.Common.DI\obj\Release\PCF-POC.Common.DI.csprojResolveAssemblyReference.cache
+C:\POC\PCF-POC\PCF-POC.Common.DI\obj\Release\PCF-POC.Common.DI.dll
+C:\POC\PCF-POC\PCF-POC.Common.DI\obj\Release\PCF-POC.Common.DI.pdb
