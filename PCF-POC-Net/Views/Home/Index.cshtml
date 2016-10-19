@@ -117,7 +117,12 @@
         </div>
         <div class="col-md-12 text-center">
             @*<button type="button" class="btn btn-default navbar-btn submit-button"><i class="fa fa-star" aria-hidden="true"></i> Ausstattungsempfehlungen</button>*@
-            @Html.ActionLink("Ausstattungsempfehlungen", "Recommendation", "Home", null, new { @class = "btn btn-default navbar-btn submit-button" })
+
+            @*---------Orignal Code---------*@
+            @*@Html.ActionLink("Ausstattungsempfehlungen", "Recommendation", "Home", null, new { @class = "btn btn-default navbar-btn submit-button" })*@
+
+            @*---------Introduce Button disabled bug---------*@   
+            @Html.ActionLink("Ausstattungsempfehlungen", "Recommendation", "Home", null, new { @class = "btn btn-default navbar-btn disabled" })
         </div>
         <div class="col-md-12 text-center">
             <button type="button" class="btn btn-default navbar-btn submit-button"><i class="fa fa-newspaper-o" aria-hidden="true"></i> PreSalesNews</button>
